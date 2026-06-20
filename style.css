@@ -203,7 +203,7 @@ nav a:hover{
 
 .gallery img{
     width:100%;
-    height:260px;
+    height:220px;
 
     object-fit:cover;
 
@@ -555,8 +555,8 @@ footer{
 .studio-slider{
     position:relative;
     width:100%;
-    max-width:420px;
-    height:620px;
+    max-width:100%;
+    height:280px;
 
     overflow:hidden;
     border-radius:10px;
@@ -837,8 +837,8 @@ footer{
 .higiene-slider{
     position:relative;
     width:100%;
-    max-width:420px;
-    height:620px;
+    max-width:100%px;
+    height:280px;
 }
 
 .higiene-slider img{
@@ -889,17 +889,14 @@ footer{
 @media(max-width:768px){
 
     nav{
-
-        gap:15px;
-
-        padding:15px;
+        flex-direction:column;
+        gap:10px;
+        padding:12px;
     }
 
     nav a{
-
-        font-size:.9rem;
+        font-size:14px;
     }
-
 }
 
 @media(max-width:768px){
@@ -975,4 +972,100 @@ footer{
         font-size:16px;
     }
 
+}
+
+@media(max-width:768px){
+
+    .logo{
+        width:160px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .studio-text,
+    .higiene-text{
+
+        width:100%;
+        text-align:center;
+    }
+
+    .studio-text h2,
+    .higiene-text h2{
+
+        text-align:center;
+    }
+
+    .studio-text p,
+    .higiene-text p{
+
+        text-align:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .brands-grid img{
+
+        height:35px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .socials{
+
+        position:relative;
+        justify-content:center;
+        top:0;
+        left:0;
+
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .logo{
+        width:160px;
+    }
+
+    .studio-container,
+    .higiene-container{
+        flex-direction:column;
+    }
+
+    .studio-slider,
+    .higiene-slider{
+        height:280px;
+    }
+
+    .gallery img{
+        height:220px;
+    }
+
+    .studio-text h2,
+    .higiene-text h2,
+    .section h2{
+        text-align:center;
+        font-size:28px;
+    }
+
+    .studio-text p,
+    .higiene-text p{
+        text-align:center;
+    }
+
+    .brands-grid img{
+        height:35px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
 }
