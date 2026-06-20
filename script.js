@@ -118,4 +118,21 @@ function nextHigiene() {
     showHigiene(higieneCurrent);
 }
 
-setInterval(nextHigiene, 5000);
+const galleryBtn = document.querySelector(".gallery-toggle");
+const gallery = document.querySelector(".gallery");
+
+if (galleryBtn) {
+
+    galleryBtn.addEventListener("click", () => {
+
+        gallery.classList.toggle("open");
+
+        if (gallery.classList.contains("open")) {
+            galleryBtn.textContent = "OCULTAR GALERÍA";
+        } else {
+            galleryBtn.textContent = "VER GALERÍA";
+        }
+
+    });
+
+}

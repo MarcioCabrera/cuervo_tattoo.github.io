@@ -115,9 +115,6 @@ header{
 ======================= */
 
 nav{
-    position:sticky;
-    top:0;
-    z-index:999;
 
     display:flex;
     justify-content:center;
@@ -232,6 +229,41 @@ nav a:hover{
 
 .gallery-background h2{
     color:#F7F4D7;
+}
+
+.gallery-toggle{
+    display:none;
+}
+@media(max-width:768px){
+
+    .gallery-toggle{
+
+        display:block;
+
+        margin:0 auto 25px auto;
+
+        padding:15px 30px;
+
+        background:#006633;
+        color:white;
+
+        border:none;
+
+        border-radius:5px;
+    }
+
+    .gallery{
+
+        display:none;
+    }
+
+    .gallery.open{
+
+        display:grid;
+
+        grid-template-columns:1fr;
+    }
+
 }
 
 /* =======================
@@ -1069,3 +1101,16 @@ footer{
         font-size:14px;
     }
 }
+
+@media(max-width:768px){
+
+    #cuervo p{
+
+        font-size:13px;
+        line-height:1.7;
+
+        max-width:95%;
+    }
+
+}
+
